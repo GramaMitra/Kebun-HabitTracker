@@ -1,0 +1,37 @@
+[
+  {
+    "id": "succulent",
+    "name": "Sukulen",
+    "bestFor": "Habit kecil harian — minum air, stretching, journaling singkat",
+    "growthStages": ["seed", "sprout", "growing", "bloom", "wilted"],
+    "description": "Paling rendah hati di antara penghuni kebun. Jarang minta perhatian, tapi setia tumbuh pelan-pelan."
+  },
+  {
+    "id": "flower",
+    "name": "Bunga",
+    "bestFor": "Habit kreatif — menggambar, menulis, bermain alat musik",
+    "growthStages": ["seed", "sprout", "growing", "bloom", "wilted"],
+    "description": "Butuh perhatian rutin, lalu mekar di saat yang paling tidak terduga. Untuk habit yang prosesnya ingin kamu nikmati."
+  },
+  {
+    "id": "tree",
+    "name": "Pohon Kecil",
+    "bestFor": "Habit jangka panjang — belajar bahasa, membaca rutin, olahraga",
+    "growthStages": ["seed", "sprout", "growing", "bloom", "wilted"],
+    "description": "Tumbuh paling lambat, tapi akarnya paling dalam. Untuk habit yang mau kamu bawa jauh ke depan."
+  },
+  {
+    "id": "herb",
+    "name": "Herba",
+    "bestFor": "Habit kesehatan — tidur lebih awal, sarapan baik, jalan kaki",
+    "growthStages": ["seed", "sprout", "growing", "bloom", "wilted"],
+    "description": "Praktis dan harum. Paling senang dipanen sedikit-sedikit, hampir setiap hari."
+  },
+  {
+    "id": "vine",
+    "name": "Tanaman Rambat",
+    "bestFor": "Habit sosial — menelepon keluarga, quality time, menyapa teman",
+    "growthStages": ["seed", "sprout", "growing", "bloom", "wilted"],
+    "description": "Tumbuh menyamping dan mencari tempat bertumpu. Cocok untuk habit yang tumbuh bersama orang lain."
+  }
+]
