@@ -19,7 +19,7 @@ const SRC_DUSK = BASE + 'sounds/garden-dusk.mp3';
 
 export function useAmbientSound(dusk) {
   const [on, setOn] = useState(() => {
-    try { const s = JSON.parse(localStorage.getItem(LS_KEY)); return !!(s && s.on); } catch (e) { return false; }
+    try { const s = JSON.parse(localStorage.getItem(LS_KEY)); return s ? !!(s && s.on) : false; } catch (e) { return false; }
   });
   const [vol, setVol] = useState(() => {
     try { const s = JSON.parse(localStorage.getItem(LS_KEY)); return s && typeof s.v === 'number' ? s.v : 0.6; } catch (e) { return 0.6; }
@@ -31,7 +31,7 @@ export function useAmbientSound(dusk) {
   stateRef.current = { on, vol, dusk };
   const mountedRef = useRef(false);
 
-  useEffect(() => { try { localStorage.setItem(LS_KEY, JSON.stringify({ on, v: vol })); } catch (e) {} }, [on, vol]);
+  useEffect(() => { try { localStorage.setItem(LS_KEY, JSON.stringify({ v: vol })); } catch (e) {} }, [vol]);
 
   const stopFade = useCallback(() => {
     if (fadeRef.current) { clearInterval(fadeRef.current); fadeRef.current = null; }
